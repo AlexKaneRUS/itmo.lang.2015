@@ -25,7 +25,6 @@ class SimpleGrepUtility implements Grep {
 
     public List<String> findLines(String regex) throws IOException {
         List<String> result = new ArrayList<String>();
-        result.clear();
         Pattern finalRegex = Pattern.compile(regex);
         for (int i = 0; i < lines.length; i++) {
             Matcher theMatcher = finalRegex.matcher(lines[i]);
@@ -39,7 +38,6 @@ class SimpleGrepUtility implements Grep {
     @Override
     public List<String> findParts(String regex) throws IOException {
         List<String> result = new ArrayList<String>();
-        result.clear();
         Pattern finalRegex = Pattern.compile(regex);
         for (int i = 0; i < lines.length; i++) {
             Matcher theMatcher = finalRegex.matcher(lines[i]);
@@ -53,7 +51,6 @@ class SimpleGrepUtility implements Grep {
     @Override
     public List<String> findInvertMatch(String regex) throws IOException {
         List<String> result = new ArrayList<String>();
-        result.clear();
         Pattern finalRegex = Pattern.compile(".*" + regex + ".*");
         for (int i = 0; i < lines.length; i++) {
             Matcher theMatcher = finalRegex.matcher(lines[i]);
