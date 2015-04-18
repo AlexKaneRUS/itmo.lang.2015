@@ -1,4 +1,4 @@
-package ru.ifmo.Sadovnikov.t09;
+package ru.ifmo.lang.Sadovnikov.t09;
 
 import java.io.IOException;
 import java.nio.file.Files;
